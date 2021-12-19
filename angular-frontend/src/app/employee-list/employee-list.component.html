@@ -1,0 +1,36 @@
+
+<br/> <br />
+<hr />
+<h2 class="font-weight-light  text-large" > Employee List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> First Name</th>
+            <th> Last Name </th>
+            <th> Email Id</th>
+            <th> DateOfBirth</th>
+            <th> Gender</th>
+            <th>Address</th>
+            <th> City</th>
+            <th>State</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> {{ employee.firstName }} </td>
+            <td> {{ employee.lastName }} </td>
+            <td> {{ employee.emailId }} </td>
+            <td> {{ employee.dateOfBirth }} </td>
+            <td> {{ employee.gender }} </td>
+            <td> {{ employee.address }} </td>
+            <td> {{ employee.city }} </td>
+            <td> {{ employee.state }} </td>
+            <td>
+                <button (click) = "updateEmployee(employee.id)" class = "btn btn-outline-primary btn-sm"> Update</button>
+                <button (click) = "deleteEmployee(employee.id)" class = "btn  btn-outline-danger btn-sm " style="margin-left: 5px"> Delete</button>
+                <button (click) = "employeeDetails(employee.id)" class = "btn btn-outline-info btn-sm" style="margin-left: 5px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

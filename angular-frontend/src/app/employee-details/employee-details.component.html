@@ -1,0 +1,63 @@
+<br />
+<br />
+<hr />
+<h3> View Employee Details</h3>
+<!-- <div>
+    <div>
+        <label> <b> First Name: </b></label> {{employee.firstName}}
+    </div>
+    <div>
+        <label> <b> Last Name: </b></label> {{employee.lastName}}
+    </div>
+    <div>
+        <label> <b> Email Id: </b></label> {{employee.emailId}}
+    </div>
+</div> -->
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{employee.firstName}} {{employee.lastName}} !</h5>
+        <h6 class="card-subtitle mb-2 text-muted"> Dear {{employee.firstName}} </h6>
+        <p class="card-text">Hope your are doing well. Have a good to see you again...</p>
+
+    </div>
+</div>
+<hr />
+<div>
+    <div class="card-columns">
+        <div class="card bg-warning">
+            <div class="card-body text-center">
+                <p class="card-text"><span>EmailId: </span> {{employee.emailId}}</p>
+            </div>
+        </div>
+        <div class="card bg-primary">
+            <div class="card-body text-center">
+                <p class="card-text"><span>Gender: </span> {{employee.gender}} </p>
+            </div>
+        </div>
+       
+        <div class="card bg-success">
+            <div class="card-body text-center">
+                <p class="card-text"><span>DateOfBirth: </span> {{employee.dateOfBirth}}</p>
+            </div>
+        </div>
+        <div class="card bg-info">
+            <div class="card-body text-center">
+                <p class="card-text"><span>Address: </span> {{employee.address}}</p>
+            </div>
+        </div>
+        <div class="card bg-danger">
+            <div class="card-body text-center">
+                <p class="card-text"><span>City: </span> {{employee.city}}</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text"><span>state: </span> {{employee.state}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary"  routerLink="/employees" > Back </button>
+</div>
